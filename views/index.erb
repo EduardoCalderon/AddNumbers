@@ -1,4 +1,10 @@
+<h1>Mi cuenta es : </h1>
 <form action="/">
 <input type="hidden" name="@number + 1">
 <input type="submit" value="Suma!!"></input>
 </form>
+<% if @number == true %>
+<%= @number = @number + 1 %>
+<%else @number == false %>
+<%= @number = 0 %>
+<%end %>
