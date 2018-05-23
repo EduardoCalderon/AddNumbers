@@ -1,8 +1,7 @@
 require 'sinatra'
 
-get '/' do
+get '/:@number' do
 "Mi Cuenta es: #{params[:@number]}"
 end
 
-"@number = @number + 1"
 erb :index
