@@ -5,6 +5,6 @@
 <%end %>
 
 <form action="/">
-<input type="hidden" name="@number + 1">
+<input type="hidden" value="<%= @number.to_i + 1 %>" name="number">
 <input type="submit" value="Suma!!"></input>
 </form>
