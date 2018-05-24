@@ -1,7 +1,6 @@
 require 'sinatra'
 
 get '/'do
-@number = "<%= @number.to_i + 1 %>"
+@number = "#{params[:number]}"
 erb :index
-params[:number]
 end
