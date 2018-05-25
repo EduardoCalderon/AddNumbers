@@ -1,6 +1,6 @@
 require 'sinatra'
 
-get '/:number'do
+get '/'do
 @number = params[:number]
 erb :index
 end
